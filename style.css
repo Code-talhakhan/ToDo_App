@@ -151,4 +151,64 @@
     box-shadow: -6px 0 0 #00acc1,
                 0 18px 30px rgba(0, 0, 0, 0.18);
 }
+@media (max-width: 480px) {
+    .todo-container {
+        width: 92%;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .title {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+
+    .input-box {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .input-box input {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .input-box button {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .singleTodo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 14px;
+    }
+
+    .singleTodo p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .todo-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .todo-actions button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+@media (hover: none) {
+    .singleTodo:hover {
+        transform: none;
+        box-shadow: -6px 0 0 #00acc1,
+                    0 10px 20px rgba(0,0,0,0.12);
+    }
+}
+
+
 
